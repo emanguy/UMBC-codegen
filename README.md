@@ -15,9 +15,11 @@ Allows UMBC students to easily and quickly create C++ projects with a single scr
 
 ###Installation:
 Run these commands in your home directory on the UMBC GL server:
+```
 git clone https://github.com/emanguy/UMBC-codegen.git
 cd UMBC-codegen
 ./install.sh
+```
 
 ###Execution:
-In the src directory where you're going to write your project files, execute the command *cppbuild*, then follow the prompts.
+In the src directory where you're going to write your project files, execute the command ```cppbuild```, then follow the prompts.
