@@ -23,3 +23,6 @@ cd UMBC-codegen
 
 ###Execution:
 In the src directory where you're going to write your project files, execute the command ```cppbuild```, then follow the prompts.
+
+###Bash users:
+If you're using bash on a linux system other than the UMBC GL servers, please check the code out from the ```bash-shell``` branch rather than master.
