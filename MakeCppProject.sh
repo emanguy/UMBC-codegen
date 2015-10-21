@@ -170,7 +170,7 @@ then
 		echo "/*" > "Driver."$runtype
 		echo " * File: Driver.$runtype" >> "Driver."$runtype
 		echo " * Project: CMSC "$classNbr" "$workType" "$workNbr", "$semester" "`date +%Y` >> "Driver."$runtype
-		echo " * Author: "`getent passwd $USER | cut -d ":" -f 5` >> "Driver."$runtype
+		echo " * Author: "`getent passwd $USER | cut -d ":" -f 5` | sed -r "s/(\w+ \w+).*/\1/"  >> "Driver."$runtype
 		echo " * Date: "`date +%D` >> "Driver."$runtype
 		echo " * Section: "$secNbr >> "Driver."$runtype
 		echo " * E-mail: "$USER"@umbc.edu" >> "Driver."$runtype
