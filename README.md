@@ -1,6 +1,6 @@
 # UMBC C++ Coding Standards Autogenerator
 ## By Evan Rittenhouse
-Allows UMBC students to easily and quickly create C++ projects with a single script according to the Spring 2015 C++ coding standards.
+Allows UMBC students to easily and quickly create C or C++ projects with a single script according to the Spring 2015 C++ coding standards.
 
 ###Features:
 * Automatically creates Driver.cpp to run program.
@@ -10,8 +10,10 @@ Allows UMBC students to easily and quickly create C++ projects with a single scr
   * ```make clean```- removes typical leftover files during builds.
   * ```make todo```- lists all TODO comments in .cpp and .h files and on what lines
   * ```make run```- compiles and runs the full program
-* Creates .cpp and .h files, filling in information the script can easily scrape from the UMBC GL server and creating skeleton classes where necessary.
-  * Adds rules to makefile upon creation of .cpp files
+* Creates .cpp, .c, and .h files, filling in information the script can easily scrape from the UMBC GL server and creating skeleton classes where necessary.
+  * Adds rules to makefile upon creation of .cpp or .c files
+  * [NEW] now only requests project information upon first invocation
+  * Changes Driver.c/Driver.cpp #include directives based on filetype
 
 ###Installation:
 Run these commands in your home directory on the UMBC GL server:
